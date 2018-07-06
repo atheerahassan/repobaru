@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+        <button ion-button icon-only menuToggle>
+            <ion-icon name="menu">
+            </ion-icon>
+        </button>
+    </ion-buttons>
+
+
+    <ion-title>REVIEWS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-card *ngFor = " let item of upload">
+      
+      <ion-item>
+        <ion-avatar item-left>
+          <img src = {{item.img}}>
+            </ion-avatar>
+            <p>{{item.content}}</p>
+            <p>{{item.content1}}</p>
+            <p>{{item.content2}}</p>
+            <p>{{item.content3}}</p>
+          </ion-item>
+         <ion-card-content right>           
+          <p>{{item.when}}</p>
+          <img src = {{item.imgs}}>
+      </ion-card-content>
+     </ion-card>
+    </ion-content>
+
+
+
+ 
