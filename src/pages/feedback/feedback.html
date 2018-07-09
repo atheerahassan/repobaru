@@ -16,6 +16,8 @@
 <ion-content>
     <ion-card *ngFor = " let item of upload">
       
+  
+
       <ion-item>
         <ion-avatar item-left>
           <img src = {{item.img}}>
@@ -26,7 +28,7 @@
             <p>{{item.content3}}</p>
           </ion-item>
          <ion-card-content right>           
-          <p>{{item.when}}</p>
+          <p style="text-align: right;color:#488aff">{{item.when}}</p>
           <img src = {{item.imgs}}>
       </ion-card-content>
      </ion-card>
